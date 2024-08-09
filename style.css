@@ -110,4 +110,35 @@ body
     bottom: 0;
     height: 50%;
     width: 80%;
+    border-radius: 30px;
+}
+
+.container .btn::after
+{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+}
+
+.container .btn:hover::after
+{
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30%;
+}
+
+.container .btn:nth-child(1)::before,  /* change 1 */
+.container .btn:nth-child(1)::after
+{
+    background: #ff1f71;
+    box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71, 0 0 60px #ff1f71;
 }
