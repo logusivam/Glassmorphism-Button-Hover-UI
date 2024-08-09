@@ -147,7 +147,7 @@ body
 .container .btn:nth-child(2)::after
 {
     background: #fdec04;
-    box-shadow: 0 0 5px #f8ff1f, 0 0 15px #f0ff1f, 0 0 30px #e9ff1f, 0 0 60px #e1ff1f;
+    box-shadow: 0 0 5px #fdec04, 0 0 15px #fdec04, 0 0 30px #fdec04, 0 0 60px #fdec04;
 }
 
 .container .btn:nth-child(3)::before,  /* change 3 */
