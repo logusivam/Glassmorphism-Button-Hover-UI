@@ -89,3 +89,25 @@ body
 {
     transform: skewX(45deg) translate(200px);
 }
+
+.container .btn::before
+{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+}
+
+.container .btn:hover::before  /* lightup button */
+{
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+}
